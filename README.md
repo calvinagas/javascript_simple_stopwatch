@@ -8,10 +8,6 @@ Simple Stopwatch using JavaScript
 * Pause (Space Bar Key = 32)
 * Reset (Enter Key = 13)
 
-## Function
-* public function connect()
-* public function login()
-
 ## JavaScript Function - Inside timer.js
 * function startTimer()
 * function updateTimer()
