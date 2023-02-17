@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-item-left {
+    display: flex;
+    background-color: #111;
+    padding: 10px;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item-right {
+    display: flex;
+    background-color: #FFAC1C;
+    padding: 10px;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.wrapper {
+    user-select: none;
+}
+
+.wrapper .time {
+    height: 100px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+    padding: 0 10px;
+}
+
+.wrapper .time span {
+    width: 180px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.time span.colon {
+    width: 10px;
+}
+
+.time span.ms-colon,
+.time span.millisecond {
+    color: #FFAC1C;
+}
+
+.wrapper .buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #333;
+    background: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+.buttons button.active,
+.buttons button.stopActive {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.timer {
+    text-align: center;
+    font-size: 200px;
+    font-family: Roboto Mono;
+  }
